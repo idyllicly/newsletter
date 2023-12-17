@@ -1,0 +1,149 @@
+body{
+    background-color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    color:hsl(234, 29%, 20%);
+    font-weight: 400;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    flex-direction: column;
+}
+
+.card{
+    border-radius:20px;
+    background-color: white;
+    padding: 20px ;
+    display:flex;
+    gap:50px;
+    margin:auto;
+}
+
+#submitForm{
+    flex-wrap: wrap-reverse;
+    max-width:1070px;
+}
+
+#submitForm header{
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+li{
+    margin:15px;
+    list-style: none;
+    position:relative;
+}
+
+li:before{
+    content:'';
+    background-image:url('assets/images/icon-list.svg') ;
+    width:21px;
+    height:21px;
+    position:absolute;
+    left:-42px;
+}
+
+form{
+    margin-top:30px;
+}
+
+form *{
+    margin:10px;
+}
+
+form label{
+    font-size: 11px;
+    font-weight: 700;
+    margin:0px;
+}
+
+
+form [type=submit], form [type=email]{
+    height:50px;
+    width:390px;
+    display: block;
+    margin:10px 0px;
+    padding:0;
+    border-radius: 10px;
+}
+
+form [type=submit]{
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    font-weight:700;
+    border-width: 0px;
+}
+
+form [type=email]{
+    border-color:hsl(0, 0%, 80%);
+    border-width: 1px;
+    font-weight: 700;
+    padding:0px 0px 0px 20px;
+    width:370px;
+    border-style: solid;
+}
+
+form [type=submit]:focus,form [type=submit]:hover{
+    background-image: linear-gradient(to right, #ff5379 , #ff693d);
+    cursor:pointer
+}
+
+form [type=email]:focus, form [type=email]:hover{
+    cursor:pointer
+}
+
+form [type=email]::placeholder{
+    color:hsl(231, 7%, 60%);
+}
+
+.copy{
+    flex-grow: 1;
+}
+
+.subscribePoster{
+    background-image: url('assets/images/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:593px;
+    flex-grow:1 ;
+    min-width:400px;
+    display:block;
+}
+
+#submitSuccess{
+    display:none;
+    width:360px;
+    padding:50px
+}
+
+#submitSuccess h1{
+    font-size: 45px;
+    margin-bottom:5px
+}
+
+#submitSuccess button{
+    width:100%;
+    height:50px;
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    font-weight:700;
+    border-radius: 15px;
+    margin:15px 0;
+}
+
+#submitSuccess button:hover{
+    cursor:pointer;
+}
+
+#submitSuccess:before{
+    content:'';
+    background-image:url('assets/images/icon-success.svg') ;
+    width:64px;
+    height:64px;
+    display:block
+    
+}
